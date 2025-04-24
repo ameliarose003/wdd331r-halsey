@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap');
+
+
+
+
+
+body {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+header {
+    display: grid;
+    align-items: center;
+}
+
+h1 {
+    justify-self: center;
+}
+
+h1 a{
+    color: #333;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 50px;
+}
+
+nav {
+    border-top: solid 1px #d0d0d0;
+    border-bottom: solid 1px #d0d0d0;
+    justify-items: end;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    column-gap: 1.5em;
+    justify-items: end;
+}
+
+nav a {
+    color: #666;
+    font-family: "Lora", serif;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #00ddff;
+}
+
+nav a:active {
+    color: #DEB887;
+}
+
+main {
+    margin-top: 20px;
+    /* margin-left: 20; */
+}
+
+article {
+    display: grid;
+    grid-template-columns: 200px auto;
+    /* column-gap: 20px; */
+    /* justify-items: center; */
+
+}
+
+.post-date {
+    padding-right: 20px;
+    border-right: solid 1px #d0d0d0;
+    justify-self: end;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    text-align: end;
+    padding-left: 30px;
+}
+
+.post-date:nth-child(1) {
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.post-content figure {
+    justify-self: center;
+}
+
+.post-content {
+    padding-left: 20px;
+    border-bottom: solid 1px #d0d0d0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+h2 {
+    color: #333;
+    font-family: "Lora", serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+h2 a {
+    color: #666;
+    font-family: "Lora", serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+p {
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+p a {
+    color: #666;
+
+}
+
+
+
+
+@media screen and (max-width:600px) {
+    body {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    h1 {
+        text-align: center;
+    }
+    nav ul{
+        flex-direction: column;
+        padding-left: 0;
+    }
+    nav {
+        justify-items: center;
+        text-align: center;
+    }
+    nav li {
+        padding: 7px;
+    }
+    article {
+        display: block;
+    }
+    .post-date {
+        border-right: none;
+        
+    }
+}
+
+/* @media screen and (max-width:1000px) {
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+} */
